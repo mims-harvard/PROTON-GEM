@@ -104,21 +104,18 @@ Convenient Makefile commands are also included for common development tasks. To 
 make help
 ```
 
-## License
-
-PROTON is released under the [MIT License](https://github.com/mims-harvard/PROTON/blob/main/LICENSE).
-
 
 ## Citation
 
-If you use PROTON, please consider citing our paper.
+PROTON is released under the [MIT License](https://github.com/mims-harvard/PROTON/blob/main/LICENSE). If you use PROTON, please consider citing our paper:
 ```
 @article{noori_graph_2025,
-  title={Graph AI generates neurological hypotheses validated in molecular, organoid, and clinical systems},
-  author={Noori, Ayush and Polonuer, Joaquin and Meyer, Katharina and Budnik, Bogdan and Morton, Shad and Wang, Xinyuan and Nazeem, Sumaiya and He, Yingnan and Arango, Iñaki and Vittor, Lucas and Woodworth, Matthew and Krolewski, Richard C. and Li, Michelle M. and Liu, Ninning and Kamath, Tushar and Macosko, Evan and Ritter, Dylan and Afroz, Jalwa and Henderson, Alexander B. H. and Studer, Lorenz and Rodriques, Samuel G. and White, Andrew and Dagan, Noa and Clifton, David A. and Church, George M. and Das, Sudeshna and Tam, Jenny M. and Khurana, Vikram and Zitnik, Marinka},
-  journal={arXiv preprint},
-  note={arXiv:XXXX.XXXXX (placeholder)},
-  year={2025}
+  title = {Graph {{AI}} generates neurological hypotheses validated in molecular, organoid, and clinical systems},
+  author = {Noori, Ayush and Polonuer, Joaqu{\'i}n and Meyer, Katharina and Budnik, Bogdan and Morton, Shad and Wang, Xinyuan and Nazeen, Sumaiya and He, Yingnan and Arango, I{\~n}aki and Vittor, Lucas and Woodworth, Matthew and Krolewski, Richard C. and Li, Michelle M. and Liu, Ninning and Kamath, Tushar and Macosko, Evan and Ritter, Dylan and Afroz, Jalwa and Henderson, Alexander B. H. and Studer, Lorenz and Rodriques, Samuel G. and White, Andrew and Dagan, Noa and Clifton, David A. and Church, George M. and Das, Sudeshna and Tam, Jenny M. and Khurana, Vikram and Zitnik, Marinka},
+  journal = {arXiv pre-print},
+  note = {arXiv:2512.13724},
+  year = 2025,
+  doi = {10.48550/arXiv.2512.13724},
 }
 ```
 
