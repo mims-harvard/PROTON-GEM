@@ -67,15 +67,20 @@ wandb:
 5️⃣ Finally, load the model with the following code:
 ```python
 import pytorch_lightning as pl
+import pandas as pd
 from src.config import conf
 from src.constants import TORCH_DEVICE
 from src.dataloaders import load_graph
 from src.models import HGT
 
 pl.seed_everything(conf.seed, workers=True)
+nodes = pd.read_csv(conf.paths.kg.nodes_path, dtype={"node_index": int}, low_memory=False)
+edges = pd.read_csv(
+    conf.paths.kg.edges_path, dtype={"edge_index": int, "x_index": int, "y_index": int}, low_memory=False
+)
 kg = load_graph(nodes, edges)
 pretrain_model = HGT.load_from_checkpoint(
-    checkpoint_path=str(conf.hgt.checkpoint_path),
+    checkpoint_path=str(conf.paths.checkpoint.checkpoint_path),
     kg=kg,
     strict=False,
 )
