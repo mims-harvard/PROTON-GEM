@@ -105,6 +105,9 @@ class NotebooksPathsConfig(BaseModel):
     pesticide_prediction_dir: Path = Field(
         description="Relative path to pesticide prediction outputs (converted to full Path during validation)."
     )
+    molecular_analysis_dir: Path = Field(
+        description="Relative path to molecular analysis outputs (converted to full Path during validation)."
+    )
 
     @model_validator(mode="after")
     def resolve_paths(self):
@@ -122,6 +125,7 @@ class NotebooksPathsConfig(BaseModel):
             "essentiality_gwas_dir",
             "organoid_validation_dir",
             "pesticide_prediction_dir",
+            "molecular_analysis_dir",
         ]
 
         for field_name in path_fields:

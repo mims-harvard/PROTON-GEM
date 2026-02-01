@@ -70,6 +70,7 @@ paths:
     essentiality_gwas_dir: "essentiality_gwas"
     organoid_validation_dir: "organoid_validation"
     pesticide_prediction_dir: "pesticide_prediction"
+    molecular_analysis_dir: "molecular_analysis"
 
   embeddings_cache_path: "data/embeddings/BERT_disease_embeddings.npy"
   splits_dir: "data/disease_splits"
