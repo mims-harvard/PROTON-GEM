@@ -84,9 +84,24 @@ paths:
       gba1_chembl_embeddings: "filtered_chembl_gba1_merged_embeddings.pt"
       gba1_molecules_csv: "filtered_chembl_gba1_merged_filtered_molecules_with_embeddings.csv"
       gba1_hits_csv: "GBA1_hits_with_embeddings.csv"
+      gba1_ranking_results: "gba1_ranking_results.csv"
       # Huntington analysis
       huntington_embeddings: "huntington_candidates_embeddings.pt"
       huntington_molecules_csv: "huntington_candidates_filtered_molecules_with_embeddings.csv"
+      # Figure filenames (all saved to output_dir)
+      figures:
+        # Validation analysis figures
+        cosine_similarity_distribution: "cosine_similarity_distribution"
+        umap_comparison: "umap_comparison"
+        umap_scaffold_clusters: "umap_scaffold_clusters"
+        # GBA1 ranking figures
+        gba1_percentile_distribution: "gba1_percentile_distribution"
+        gba1_scenarios_rank_curves: "gba1_scenarios_rank_curves"
+        # Huntington figures
+        htt_ranking_vs_chembl: "htt_ranking_vs_chembl"
+        hd_ranking_vs_chembl: "hd_ranking_vs_chembl"
+        recall_at_k_neurokg_htt: "recall_at_k_neurokg_htt"
+        recall_at_k_neurokg_hd: "recall_at_k_neurokg_hd"
 
   embeddings_cache_path: "data/embeddings/BERT_disease_embeddings.npy"
   splits_dir: "data/disease_splits"

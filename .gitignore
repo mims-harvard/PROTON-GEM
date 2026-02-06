@@ -285,6 +285,8 @@ docs/source
 # Jupyter notebooks
 notebooks/**
 !notebooks/**.ipynb
+!notebooks/molecular_analysis/
+!notebooks/molecular_analysis/utils.py
 
 # Data
 data/**
