@@ -40,11 +40,13 @@ paths:
     base_dir: "data/neurokg"
     nodes_path: "nodes.csv"
     edges_path: "edges.csv"
+    smiles_cache: "drug_smiles.csv"
 
   checkpoint:
     base_dir: "data/checkpoints"
     checkpoint_path: "model.ckpt"
     embeddings_path: "embeddings.pt"
+    molecular_adapter: "molecular_adapter.pt"
 
   mappings:
     base_dir: "data/mappings"
@@ -70,7 +72,21 @@ paths:
     essentiality_gwas_dir: "essentiality_gwas"
     organoid_validation_dir: "organoid_validation"
     pesticide_prediction_dir: "pesticide_prediction"
-    molecular_analysis_dir: "molecular_analysis"
+
+    # Molecular analysis paths
+    molecular_analysis:
+      output_dir: "molecular_analysis"
+      # Embedding caches
+      unimol_cache: "unimol_embeddings.pt"
+      umap_cache: "umap_embeddings.pt"
+      # GBA1/Gaucher/Parkinson analysis
+      gba1_hits_embeddings: "GBA1_hits_embeddings.pt"
+      gba1_chembl_embeddings: "filtered_chembl_gba1_merged_embeddings.pt"
+      gba1_molecules_csv: "filtered_chembl_gba1_merged_filtered_molecules_with_embeddings.csv"
+      gba1_hits_csv: "GBA1_hits_with_embeddings.csv"
+      # Huntington analysis
+      huntington_embeddings: "huntington_candidates_embeddings.pt"
+      huntington_molecules_csv: "huntington_candidates_filtered_molecules_with_embeddings.csv"
 
   embeddings_cache_path: "data/embeddings/BERT_disease_embeddings.npy"
   splits_dir: "data/disease_splits"

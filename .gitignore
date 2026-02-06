@@ -304,3 +304,14 @@ data/**
 !data/images/figure_1a.png
 
 !data/paper/PROTON_SI_Noori_2025.pdf
+
+# Molecular analysis data (keep directory structure, ignore large files)
+!data/notebooks/
+!data/notebooks/molecular_analysis/
+data/notebooks/molecular_analysis/*.pt
+data/notebooks/molecular_analysis/*.csv
+data/notebooks/molecular_analysis/*.png
+data/notebooks/molecular_analysis/*.svg
+
+# Drug SMILES cache in neurokg
+data/neurokg/drug_smiles.csv
